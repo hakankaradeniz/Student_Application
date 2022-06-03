@@ -37,27 +37,27 @@ void adding(){
             cout << "Please Enter Student's Name : ";
             cin >> entered;
             data.insert(data.begin(),string(entered));
-            file_database << entered;
+            file_database << entered + " ";
         }else if (i == 1){
             cout << "Please Enter Student's Surname : ";
             cin >> entered;
             data.insert(data.end(),string(entered));
-            file_database << entered;
+            file_database << entered + " ";
         }else if (i == 2){
             cout << "Please Enter Student's ID Number : ";
             cin >> entered;
-            data.insert(data.end(),string(" " + entered));
-            file_database << entered;
+            data.insert(data.end(),string(entered));
+            file_database << entered + " ";
         }else if (i == 3){
             cout << "Please Enter Student's Phone Number : ";
             cin >> entered;
             data.insert(data.end(),string(entered));
-            file_database << entered;
+            file_database << entered + " ";
         }else if (i == 4){
             cout << "Please Enter Student's e-mail Address : ";
             cin >> entered;
             data.insert(data.end(),string(entered));   
-            file_database << entered;
+            file_database << entered+"\n";
         }
     }
     
